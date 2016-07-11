@@ -51,4 +51,4 @@ RUN wget http://prdownloads.sourceforge.net/netatalk/netatalk-${netatalk_version
 
 EXPOSE 548
 
-CMD [ "/usr/local/sbin/netatalk", "-d", "-F", "/usr/local/etc/afp.conf" ]
+CMD [ "/usr/local/sbin/netatalk", "-d", "-F", "/usr/local/etc/afp.conf", "-P", "/timemachine/afp.pid"]
